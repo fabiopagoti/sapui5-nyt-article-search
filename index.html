@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Artigos NYT</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"nyt.artigos": "./"}'>
+		</script>
+		
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				// var oView = sap.ui.xmlview("v1",{
+				// 	viewName: "nyt.artigos.view.S0"
+				// });
+				
+				
+				// // var sUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=08f9f248fde312d0fdc1205c781e3e47:8:68901588";
+				
+				// var sUrl = "/api?api-key=08f9f248fde312d0fdc1205c781e3e47:8:68901588";
+				// var oModel = new sap.ui.model.json.JSONModel(sUrl);
+				
+				// oView.setModel(oModel);
+				
+				// oView.placeAt("content");
+				
+				
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "nyt.artigos"
+					})
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

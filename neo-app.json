@@ -1,0 +1,23 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/api",
+      "target": {
+        "type": "destination",
+        "name": "NYT",
+        "entryPath": "/svc/search/v2/articlesearch.json"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ]
+}
