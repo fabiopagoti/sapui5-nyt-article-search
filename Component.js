@@ -4,7 +4,10 @@ sap.ui.define([
 	"use strict";
 
 	return UIComponent.extend("nyt.artigos.Component", {
-
+		
+		/*********************************************
+		* Replace the line below with your API Key
+		**********************************************/
 		apiKey: "08f9f248fde312d0fdc1205c781e3e47:8:68901588",
 		
 		metadata: {

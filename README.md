@@ -21,21 +21,21 @@ When paste the link below
 
 Inside Cloud Platform Cockpit, create a Destination using the menu option Connectivity >> Destinations
 
-You can easily import file "NYT" located at the root of the repository for your convenience.
+You can easily import [file NYT](https://github.com/fabiopagoti/sapui5-nyt-article-search/blob/master/NYT) located at the root of the repository for your convenience.
 
 If you want to create the destination manually, enter the information below
 
 Destination details:
 
-Name: NYT
-Type: HTTP
-Description: New York Times (or any other name)
-URL: https://api.nytimes.com
-Proxy Type: Internet
-Authentication: NoAuthentication
+* Name: NYT
+* Type: HTTP
+* Description: New York Times (or any other name)
+* URL: https://api.nytimes.com
+* Proxy Type: Internet
+* Authentication: NoAuthentication
 
 Additional properties:
-WebIDEEnabled: true
+* WebIDEEnabled: true
 
 ## Get a NYT API key
 
@@ -45,5 +45,4 @@ Get a free Article Search API key in
 
 ## Insert your API Key 
 
-Open file
-
+Open file [Component.js](https://github.com/fabiopagoti/sapui5-nyt-article-search/blob/master/Component.js) located at the root of the repo and insert your API Key according to the comment in such file

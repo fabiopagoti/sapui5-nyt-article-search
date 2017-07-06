@@ -1,0 +1,10 @@
+#
+#Thu Jul 06 22:40:00 UTC 2017
+Name=NYT
+URL=https\://api.nytimes.com
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+WebIDEEnabled=true
+Authentication=NoAuthentication
+Description=New York Times
