@@ -1,7 +1,7 @@
 # SAPUI5 New York Times Article Search
 New York Times Article Search App using SAPUI5
 
-## About This app
+## About this app
 
 This app uses a JSON model to call NYT Article Search free API
 
@@ -46,3 +46,10 @@ Get a free Article Search API key in
 ## Insert your API Key 
 
 Open file [Component.js](https://github.com/fabiopagoti/sapui5-nyt-article-search/blob/master/Component.js) located at the root of the repo and insert your API Key according to the comment in such file
+
+## Check out remote branches!
+
+This repo constains two remote branches:
+
+[simple](https://github.com/fabiopagoti/sapui5-nyt-article-search/tree/simple) - A simpler version of the app
+[master](https://github.com/fabiopagoti/sapui5-nyt-article-search) - A more advanced version of the app
