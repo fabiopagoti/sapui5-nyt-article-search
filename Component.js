@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(UIComponent) {
 	"use strict";
 
-	return UIComponent.extend("nyt.artigos.Component", {
+	return UIComponent.extend("nyt.articles.Component", {
 		
 		/*********************************************
 		* Replace the line below with your API Key
@@ -17,15 +17,14 @@ sap.ui.define([
 		init: function() {
 			UIComponent.prototype.init.apply(this, arguments);
 			
-			var oManifest = this.getManifest();
-			var sPath = oManifest["sap.ui5"].models[""].uri;
+			// var oManifest = this.getManifest();
+			// var sPath = oManifest["sap.ui5"].models[""].uri;
 			
-			var oModel = this.getModel();
-			oModel.loadData(sPath,
-			{
-				"api-key": this.apiKey
-			});
-			
+			// var oModel = this.getModel();
+			// oModel.loadData(sPath,
+			// {
+			// 	"api-key": this.apiKey
+			// });
 		}
 	});
 });

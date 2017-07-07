@@ -1,21 +1,47 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="nyt.artigos.controller.S0">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="nyt.articles.controller.S0">
 	<App>
 		<pages>
-			<Page title="Artigos do NYT">
+			<Page title="NYT Articles">
+				<subHeader>
+					<Toolbar>
+						<content>
+							<SearchField placeholder="Search Term" search="onSearch" id="searchField" value="{view>/term}"/>
+						</content>
+					</Toolbar>
+				</subHeader>
 				<content>
-					<List items="{/response/docs}">
+					<List busy="{view>/isBusy}" items="{/response/docs}" noDataText="No articles found" updateFinished="onUpdateFinished">
 						<headerToolbar>
-							<Toolbar >
+							<Toolbar>
 								<content>
-									<SearchField  placeholder="Termo de pesquisa" search="onSearch"/>
+									<Title text="Articles ({/response/meta/hits})" level="H2"/>
 								</content>
 							</Toolbar>
 						</headerToolbar>
 						<items>
-							<StandardListItem title="{headline/main}"/>
+							<ObjectListItem icon="{ path: 'document_type', formatter: '.formatDocumentType' }" intro="{type_of_material}" title="{headline/main}" number="{word_count}" numberUnit="words" type="Navigation" press="onListItemPress">
+								<attributes>
+									<ObjectAttribute text="{ path: 'pub_date', formatter: '.formatDate' } ({ path: 'pub_date', formatter: '.formatDaysAgo' } days ago)"/>
+									<ObjectAttribute text="{byline/original}"/>
+									<ObjectAttribute text="{section_name} / {subsection_name}"/>
+								</attributes>
+								<firstStatus>
+									<ObjectStatus title="Keyword 1" text="{keywords/0/value}"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus title="Keyword 2" text="{keywords/1/value}"/>
+								</secondStatus>
+							</ObjectListItem>
 						</items>
 					</List>
 				</content>
+				<footer>
+					<Toolbar>
+						<content>
+							<Button icon="sap-icon://filter" press="onPressFilter"/>
+						</content>
+					</Toolbar>
+				</footer>
 			</Page>
 		</pages>
 	</App>

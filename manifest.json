@@ -1,7 +1,7 @@
 {
 	"_version": "1.5.0",
 	"sap.app": {
-		"id": "nyt.artigos",
+		"id": "nyt.articles",
 		"type": "application",
 		"applicationVersion": {
 			"version": "1.0.0"
@@ -19,7 +19,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "nyt.artigos.view.S0",
+			"viewName": "nyt.articles.view.S0",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -50,6 +50,8 @@
 		},
 		"resources": {
 			"css": []
+		},
+		"routing": {
 		}
 	}
 }

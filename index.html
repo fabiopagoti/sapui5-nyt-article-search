@@ -12,13 +12,13 @@
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-theme="sap_bluecrystal"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-resourceroots='{"nyt.artigos": "./"}'>
+			data-sap-ui-resourceroots='{"nyt.articles": "./"}'>
 		</script>
 		
 		<script>
 			sap.ui.getCore().attachInit(function() {
 				// var oView = sap.ui.xmlview("v1",{
-				// 	viewName: "nyt.artigos.view.S0"
+				// 	viewName: "nyt.articles.view.S0"
 				// });
 				
 				
@@ -35,7 +35,7 @@
 				new sap.m.Shell({
 					app: new sap.ui.core.ComponentContainer({
 						height : "100%",
-						name : "nyt.artigos"
+						name : "nyt.articles"
 					})
 				}).placeAt("content");
 			});

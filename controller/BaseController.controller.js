@@ -3,8 +3,23 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("nyt.artigos.controller.BaseController", {
+	return Controller.extend("nyt.articles.controller.BaseController", {
 
+		/**
+		 * Get Controller's view model
+		 */
+		getModel: function(sName) {
+			return this.getView().getModel(sName);
+		},
+		
+		/**
+		 * Set Controller's view model
+		 */
+		setModel: function(oModel,sName) {
+			return this.getView().setModel(oModel,sName);
+		},
+		
+		
 		/**
 		 *@memberOf Get API-KEY
 		 */
